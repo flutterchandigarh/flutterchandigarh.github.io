@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="We are a community that is all about learning and sharing knowledge about flutter and its related technologies"
+    />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="flutter_chandigarh" />
+    <link rel="apple-touch-icon" href="icons/logo-192.png" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://flutterchandigarh.github.io" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Flutter Chandigarh" />
+    <meta
+      property="og:description"
+      content="We are a community that is all about learning and sharing knowledge about flutter and its related technologies."
+    />
+    <meta property="og:image" content="./icons/Icon-512.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:card"
+      content="https://flutterchandigarh.github.io"
+    />
+    <meta property="twitter:creator" content="flutterchandigarh" />
+    <meta property="twitter:title" content="Flutter Chandigarh" />
+    <meta
+      property="twitter:description"
+      content="We are a community that is all about learning and sharing knowledge about flutter and its related technologies."
+    />
+    <meta name="twitter:image:src" content="./icons/Icon-512.png" />
+
+    <meta name="twitter:image:width" content="512" />
+    <meta name="twitter:image:height" content="512" />
+
+    <!-- Application color for Microsoft Windows app tile and Android status bar -->
+    <meta name="theme-color" content="#00B1E9" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <title>Flutter Chandigarh</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" type="image/png" href="flutter-splash.gif" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="body">
+    <div class="splash-wrapper">
+      <!-- <video class="center" autoplay loop muted playsinline>
+        <source src="./splash.webm" type="video/webm" />
+        <source src="./splash.mp4" type="video/mp4" />
+      </video> -->
+      <img class="flutter__chandigarh__logo" src="./icons/logo.svg" alt="Flutter Chandigarh Logo">
+    </div>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAfU_VoW9sSK_ikL-7HZRMmZDK4Vl-l1us",
+        authDomain: "flutter-chandigarh.firebaseapp.com",
+        databaseURL: "https://flutter-chandigarh.firebaseio.com",
+        projectId: "flutter-chandigarh",
+        storageBucket: "flutter-chandigarh.appspot.com",
+        messagingSenderId: "871293483092",
+        appId: "1:871293483092:web:5c044c5c2a0b363f0fd5c1",
+        measurementId: "G-6MNCV1S1R0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
